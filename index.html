@@ -73,20 +73,28 @@
       height: 100%;
       object-fit:cover;
     }
+
+    .image-layer .Star{
+      z-index: 2;
+    }
+
+    .image-layer .Display{
+      z-index: 1;
+    }
     
     .Star {
 
       width: 100%;
       height:auto;
-      z-index: 2;
+     
 /*       background-image: url("CIMG7114.JPG"); */
 /*       display: block;
       margin: 0 auto; */
     }
 
-    .Background{
+    .Display{
         width: 100%;
-      z-index: 1;
+    
       
 /*         height:400px;
       background-position: bottom right,left, right; */
@@ -101,7 +109,7 @@
   <body>
     <div class = "image-layer">
     <img class = "Star" src = "Star Search Animation.gif">
-    <img class = "Background" src = "CIMG7114.JPG">  
+    <img class = "Display" src = "CIMG7114.JPG">  
     </div>
   <h2>English</h2>
   <p>Appreciate your downloading.</p>
