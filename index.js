@@ -11,12 +11,12 @@ function showLanguage(lang){
   const targetSection = document.getElementById(lang);
   if (targetSection) {
      targetSection.classList.add(`active`);
-     target.style.display = `block`;
+     targetSection.style.display = `block`;
     }
  
   }
 
-document.addEventListner(`DOMContentLoaded`, () => {
+document.addEventListener(`DOMContentLoaded`, () => {
   document.getElementById(`en-btn`).addEventListener(`click`, () => showLanguage(`en`));
   document.getElementById(`jp-btn`).addEventListener(`click`, () => showLanguage(`jp`));
 });
