@@ -4,12 +4,14 @@ function showLanguage(lang){
     const section = document.getElementById(id);
     if (section) {
       section.classList.remove(`active`);
+      section.style.display = `none`;
   }
 });
 
   const targetSection = document.getElementById(lang);
   if (targetSection) {
      targetSection.classList.add(`active`);
+     target.style.display = `block`;
     }
  
   }
