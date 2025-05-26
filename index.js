@@ -22,7 +22,7 @@
 // });
 
 function showLanguage(lang) {
-  const languages = ['en', 'jp', 'ch-simplify', 'ch_traditional'];
+  const languages = ['en', 'jp', 'ch_simplify', 'ch_traditional', 'fr', 'it', 'es','es_latino'];
   languages.forEach(id => {
     const section = document.getElementById(id);
     if (section) {
@@ -41,8 +41,12 @@ function showLanguage(lang) {
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('en-btn').addEventListener('click', () => showLanguage('en'));
   document.getElementById('jp-btn').addEventListener('click', () => showLanguage('jp'));
-  document.getElementById('ch-simplify-btn').addEventListener('click', () => showLanguage('ch-simplify'));
-  document.getElementById('ch-traditional-btn').addEventListener('click', () => showLanguage('ch-traditional'));
+  document.getElementById('ch_simplify-btn').addEventListener('click', () => showLanguage('ch_simplify'));
+  document.getElementById('ch_traditional-btn').addEventListener('click', () => showLanguage('ch_traditional'));
+  document.getElementById('fr-btn').addEventListener('click', () => showLanguage('fr'));
+  document.getElementById('it-btn').addEventListener('click', () => showLanguage('it'));
+  document.getElementById('es-btn').addEventListener('click', () => showLanguage('es'));
+  document.getElementById('es_latino-btn').addEventListener('click', () => showLanguage('es_latino'));
 });
  
     
