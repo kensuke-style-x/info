@@ -22,7 +22,7 @@
 // });
 
 function showLanguage(lang) {
-  const languages = ['en', 'jp', 'ch-simplify', 'ch-traditional'];
+  const languages = ['en', 'jp', 'ch-simplify', 'ch_traditional'];
   languages.forEach(id => {
     const section = document.getElementById(id);
     if (section) {
