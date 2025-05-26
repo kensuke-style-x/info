@@ -22,7 +22,7 @@
 // });
 
 function showLanguage(lang) {
-  const languages = ['en', 'jp'];
+  const languages = ['en', 'jp' , 'ch-simplify'];
   languages.forEach(id => {
     const section = document.getElementById(id);
     if (section) {
@@ -41,6 +41,7 @@ function showLanguage(lang) {
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('en-btn').addEventListener('click', () => showLanguage('en'));
   document.getElementById('jp-btn').addEventListener('click', () => showLanguage('jp'));
+  document.getElementById('ch-simplify-btn').addEventListener('click', () => showLanguage('ch-simplify'));
 });
  
     
