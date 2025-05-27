@@ -80,18 +80,21 @@
       display: block;
     }
 
-    button{
-    margin: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    }
+   .button {
+      display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+       gap: 10px;
+       margin: 20px 0;
+   }
+     
       
   </Style>  
     
   </head>
   <body>
   <img class = "Star" src = "Star Search Animation.gif">
-   
+  <div class = "button"> 
   <button id = "en-btn" >English</button>
   <button id = "jp-btn">日本語</button>
   <button id = "ch_simplify-btn">简体中文</button>  
@@ -100,7 +103,7 @@
   <button id = "it-btn">Italiano</button>
   <button id = "es-btn">Castellano</button>
   <button id = "es_latino-btn">Español latinoamericano</button>  
-
+  </div>
   <div id = "en" class = "lang-section active">  
   <h2>English</h2>
   <p>Appreciate your downloading.</p>
