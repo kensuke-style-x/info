@@ -105,8 +105,16 @@
        display: block;
        margin: 0 auto;
     }
-      
-     
+    .blink{
+      animation: blink-step 2s steps(1, start) infinite;
+    }
+     @keyframes blink-step [
+        0% { visibility: visible;}
+        50% { visibility: hidden; }
+        100% { visibility: visible; }
+    }
+            
+    
       
   </Style>  
     
@@ -119,7 +127,7 @@
   <img class = "Apple-logo" src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/white/en-us?releaseDate=1680652800" alt="Download on the App Store" width = 245px; height = 82px;>
   </a>    
   <h2>English</h2>
-  <p>Appreciate your downloading.</p>
+  <p class = "blink">Appreciate your downloading and subscribing.</p>
   <li>02/01/2024 Happy New Year⭐️ </li>
   <ul>Let's create this year's fisrt seven star.</ul>
   <li>17/02/2024 Seven Star has been updated to version 1.1.4⭐️</li>
